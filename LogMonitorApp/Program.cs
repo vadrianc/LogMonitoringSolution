@@ -4,7 +4,13 @@ using LogMonitoringLib.Analyzer;
 using LogMonitoringLib.Reader;
 using LogMonitoringLib.Reporter;
 
-LogReader reader = new("logs.log");
+if (args.Length == 0)
+{
+    Console.WriteLine("Provide the logs file path as the first argument");
+    return;
+}
+
+LogReader reader = new(args[0]);
 LogAnalyzer analyzer = new();
 
 var logs = reader.Parse();
