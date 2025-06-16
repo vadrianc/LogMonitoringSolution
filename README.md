@@ -15,6 +15,13 @@ In the command line execute `dotnet test`.
 ## How to run
 In the command line execute `dotnet run --project LogMonitorApp -- "C:\Work\logs.log"`.
 
+## Improvement areas
+* Write negative unit tests
+* Write integration tests
+* Write end to end tests
+* Improve log analyzer by covering corner cases
+* Architecture consideration: define interfaces for dependency injection that facilitates expanding support for different log formats, analyzers and reports.
+
 ## License
 MIT license
 
